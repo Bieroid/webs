@@ -1,0 +1,11 @@
+server {
+	listen 127.0.0.1:90;
+	server_name webserv;
+	client_max_body_size 10;
+
+	location \ {
+		index index.html;
+		root www/templates;
+		allowed_methods GET|DELETE;
+	}
+}
